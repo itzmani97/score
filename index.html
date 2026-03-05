@@ -3,568 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Score Express Inc | Cross Border Logistics</title>
-<meta name="description" content="Score Express Inc provides reliable cross-border freight services between Canada and the United States.">
+<title>Score Express Inc | Cross-Border Freight</title>
+<meta name="description" content="Simple and reliable cross-border freight transportation between Canada and the United States.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #f4f7fb;
-  --ink: #0f172a;
-  --muted: #64748b;
-  --primary: #ff7a00;
-  --primary-dark: #dd6700;
-  --brand: #0d2742;
+  --bg: #f5f7fa;
   --card: #ffffff;
-  --line: #dbe4ee;
+  --text: #0f172a;
+  --muted: #64748b;
+  --line: #dbe2ea;
+  --brand: #0f4c81;
+  --accent: #f97316;
 }
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: "Barlow", sans-serif;
-  color: var(--ink);
+  font-family: "Manrope", sans-serif;
   background: var(--bg);
-  line-height: 1.55;
+  color: var(--text);
+  line-height: 1.6;
 }
+a { text-decoration: none; color: inherit; }
+.container { width: min(1020px, calc(100% - 32px)); margin: 0 auto; }
 
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-
-.container {
-  width: min(1120px, calc(100% - 40px));
-  margin: 0 auto;
-}
-
-.topbar {
-  background: #081626;
-  color: #c4d2e0;
-  font-size: 14px;
-}
-
-.topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 18px;
-  padding: 8px 0;
-  flex-wrap: wrap;
-}
-
-.top-links, .top-meta {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.top-links a:hover { color: #fff; }
-
-.site-header {
-  background: linear-gradient(180deg, #102b48 0%, #0d2742 100%);
-  color: #fff;
+.header {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 8px 20px rgba(1, 7, 15, 0.28);
 }
-
-.header-row {
+.nav {
+  height: 72px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 14px 0;
+  justify-content: space-between;
+  gap: 16px;
 }
-
-.brand {
-  font-size: 28px;
+.logo {
+  font-size: 24px;
   font-weight: 800;
   letter-spacing: 0.2px;
 }
-
-.brand span { color: var(--primary); }
-
-.info-items {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.info-box {
-  border-left: 2px solid rgba(255, 255, 255, 0.26);
-  padding-left: 12px;
-}
-
-.info-box small {
-  display: block;
-  color: #c8d5e3;
-  font-size: 12px;
-}
-
-.info-box strong {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.nav-wrap {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding: 10px 0;
-}
-
+.logo span { color: var(--accent); }
 .menu {
   list-style: none;
   display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.menu a {
+  gap: 16px;
+  color: #334155;
   font-weight: 600;
-  color: #e4edf6;
-  transition: color 0.2s ease;
 }
-
-.menu a:hover { color: #fff; }
-
-.call-btn {
-  background: var(--primary);
+.call {
+  background: var(--brand);
   color: #fff;
-  padding: 11px 18px;
-  border-radius: 4px;
+  padding: 10px 14px;
+  border-radius: 8px;
   font-weight: 700;
-  transition: background 0.2s ease;
 }
-
-.call-btn:hover { background: var(--primary-dark); }
 
 .hero {
-  position: relative;
-  min-height: 82vh;
-  display: flex;
+  padding: 78px 0 56px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
   align-items: center;
-  color: #fff;
-  background:
-    linear-gradient(95deg, rgba(8, 19, 33, 0.88) 0%, rgba(8, 19, 33, 0.72) 48%, rgba(8, 19, 33, 0.45) 100%),
-    url("https://upload.wikimedia.org/wikipedia/commons/a/a2/Freightliner_Cascadia.jpg") center/cover no-repeat;
 }
-
-.hero-content {
-  max-width: 760px;
-  padding: 84px 0;
-}
-
-.eyebrow {
-  color: #ffb067;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
 .hero h1 {
-  font-size: clamp(36px, 6vw, 66px);
+  font-size: clamp(34px, 5vw, 54px);
   line-height: 1.05;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 800;
+  margin-bottom: 14px;
 }
-
 .hero p {
-  color: #d9e3ec;
-  font-size: clamp(17px, 2vw, 21px);
-  margin-bottom: 26px;
-  max-width: 650px;
+  color: var(--muted);
+  margin-bottom: 22px;
+  max-width: 620px;
 }
-
-.hero-actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 22px;
-  border-radius: 4px;
+  padding: 11px 16px;
+  border-radius: 8px;
   font-weight: 700;
-  font-size: 15px;
-  border: 2px solid transparent;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-secondary { border: 1px solid var(--line); background: #fff; }
+.hero-image {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.btn-primary {
-  background: var(--primary);
-  color: #fff;
-}
-
-.btn-primary:hover { background: var(--primary-dark); }
-
-.btn-ghost {
-  border-color: rgba(255, 255, 255, 0.6);
-  color: #fff;
-}
-
-.btn-ghost:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.section {
-  padding: 82px 0;
-}
-
-.section-head {
-  margin-bottom: 34px;
-}
-
-.section-head small {
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: 700;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
+.section { padding: 54px 0; }
+.section-head { margin-bottom: 20px; }
 .section-head h2 {
-  font-size: clamp(29px, 4vw, 44px);
-  text-transform: uppercase;
+  font-size: clamp(28px, 3.5vw, 40px);
   line-height: 1.1;
 }
+.section-head p { color: var(--muted); margin-top: 8px; }
 
-.section-head p {
-  margin-top: 12px;
-  color: var(--muted);
-  max-width: 700px;
-}
-
-.services-grid {
+.grid-3 {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
-
-.service-card {
+.card {
   background: var(--card);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 26px 20px;
-  box-shadow: 0 10px 20px rgba(2, 8, 17, 0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 24px rgba(2, 8, 17, 0.09);
-}
-
-.service-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #fff4e8;
-  color: var(--primary-dark);
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 14px;
-}
-
-.service-card h3 {
-  margin-bottom: 9px;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.service-card p {
-  color: var(--muted);
-}
-
-.features {
-  background: #fff;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 28px;
-  align-items: stretch;
-}
-
-.feature-list {
-  display: grid;
-  gap: 16px;
-}
-
-.feature-item {
-  background: #f8fbff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 18px;
 }
+.card h3 { font-size: 20px; margin-bottom: 6px; }
+.card p { color: var(--muted); }
 
-.feature-item h4 {
-  text-transform: uppercase;
-  margin-bottom: 7px;
-  font-size: 19px;
-}
-
-.feature-item p { color: var(--muted); }
-
-.quote-box {
-  background: #0d2742;
+.coverage-box {
+  background: #0f4c81;
   color: #fff;
   border-radius: 10px;
-  padding: 26px;
+  padding: 18px;
 }
+.coverage-box p { color: #dce7f2; }
 
-.quote-box h3 {
-  text-transform: uppercase;
-  font-size: 28px;
-  margin-bottom: 6px;
-}
-
-.quote-box p {
-  color: #d2deea;
-  margin-bottom: 16px;
-}
-
-.quote-form {
-  display: grid;
-  gap: 10px;
-}
-
-.quote-form input,
-.quote-form select,
-.quote-form textarea {
-  width: 100%;
-  border: 1px solid #355375;
-  background: #173757;
-  color: #fff;
-  border-radius: 4px;
-  padding: 11px 12px;
-  font-family: inherit;
-}
-
-.quote-form input::placeholder,
-.quote-form textarea::placeholder { color: #a9bbce; }
-
-.quote-form button {
-  margin-top: 6px;
-  border: 0;
-  background: var(--primary);
-  color: #fff;
-  font-weight: 700;
-  border-radius: 4px;
-  padding: 12px;
-  cursor: pointer;
-}
-
-.stats {
-  background: linear-gradient(180deg, #112f4f 0%, #0b223a 100%);
-  color: #fff;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
-.stat {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 7px;
-  padding: 22px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.stat strong {
-  display: block;
-  font-size: clamp(30px, 4vw, 42px);
-  line-height: 1;
-  color: #ffbb79;
-}
-
-.stat span {
-  display: block;
-  margin-top: 8px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-}
-
-.testimonial {
-  background: #fff;
-}
-
-.testimonial-card {
-  border-left: 5px solid var(--primary);
-  background: #f8fbff;
-  border-radius: 8px;
-  padding: 22px;
-  color: #1d2a39;
-}
-
-.testimonial-card p {
-  color: #3e5166;
-  font-size: 18px;
-}
-
-.testimonial-card strong {
-  display: block;
-  margin-top: 13px;
-  text-transform: uppercase;
-}
-
-.contact {
-  background: #eef3f9;
-}
-
-.contact-grid {
+.quote-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 14px;
 }
-
-.contact-card,
-.form-card {
-  background: #fff;
+.form {
+  background: var(--card);
   border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+}
+.form form { display: grid; gap: 10px; }
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  border: 1px solid #cdd8e3;
   border-radius: 8px;
-  padding: 24px;
-}
-
-.contact-card p { color: var(--muted); margin-top: 7px; }
-.contact-card p + p { margin-top: 14px; }
-
-.form-card form {
-  display: grid;
-  gap: 10px;
-}
-
-.form-card input,
-.form-card textarea {
-  border: 1px solid #c9d7e6;
-  border-radius: 5px;
-  padding: 11px;
+  padding: 10px 11px;
   font: inherit;
 }
-
-.form-card button {
-  background: var(--primary);
+.form button {
   border: 0;
+  background: var(--accent);
   color: #fff;
-  font-weight: 700;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 11px;
+  font-weight: 700;
   cursor: pointer;
 }
+.info {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+}
+.info p { margin-top: 8px; color: #334155; }
 
 .footer {
-  background: #081626;
-  color: #c4d2e0;
-  padding: 22px 0;
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  background: #fff;
 }
-
 .footer .container {
+  padding: 18px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
+  color: #475569;
 }
 
-.footer-nav {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+@media (max-width: 900px) {
+  .hero-grid, .quote-wrap { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
 }
-
-.footer a:hover { color: #fff; }
-
-@media (max-width: 1024px) {
-  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .features-grid, .contact-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 760px) {
-  .container { width: min(1120px, calc(100% - 28px)); }
-  .topbar .container { justify-content: center; }
-  .header-row { flex-direction: column; align-items: flex-start; }
-  .main-nav { flex-direction: column; align-items: flex-start; }
-  .services-grid { grid-template-columns: 1fr; }
-  .stats-grid { grid-template-columns: 1fr; }
+@media (max-width: 640px) {
+  .menu { display: none; }
+  .grid-3 { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
-<div class="topbar">
-  <div class="container">
-    <div class="top-links">
-      <a href="#contact">Help Desk</a>
-      <a href="#quote">Track Shipment</a>
-      <a href="#contact">FAQ</a>
-    </div>
-    <div class="top-meta">
-      <span>Brantford, Ontario</span>
-      <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
-    </div>
-  </div>
-</div>
-
-<header class="site-header">
-  <div class="container header-row">
-    <a href="#" class="brand">Score <span>Express</span></a>
-    <div class="info-items">
-      <div class="info-box">
-        <small>Call Us On</small>
-        <strong>+1 (000) 000-0000</strong>
-      </div>
-      <div class="info-box">
-        <small>Email</small>
-        <strong>dispatch@scoreexpress.com</strong>
-      </div>
-      <div class="info-box">
-        <small>Service Area</small>
-        <strong>Canada & United States</strong>
-      </div>
-    </div>
-  </div>
-  <div class="nav-wrap">
-    <div class="container main-nav">
-      <ul class="menu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#features">Why Us</a></li>
-        <li><a href="#quote">Quote</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a class="call-btn" href="tel:+10000000000">Call Dispatch</a>
-    </div>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#home">Score <span>Express</span></a>
+    <ul class="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#quote">Quote</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call" href="tel:+10000000000">Call Dispatch</a>
   </div>
 </header>
 
 <section class="hero" id="home">
-  <div class="container hero-content">
-    <p class="eyebrow">Cross Border Trucking</p>
-    <h1>Reliable Freight To Any Destination</h1>
-    <p>Score Express Inc delivers dependable dry-van and dedicated lane transportation between Canada and the United States with professional communication and on-time execution.</p>
-    <div class="hero-actions">
-      <a href="#quote" class="btn btn-primary">Get A Quote</a>
-      <a href="#services" class="btn btn-ghost">Our Services</a>
+  <div class="container hero-grid">
+    <div>
+      <h1>Simple, Reliable Cross-Border Freight</h1>
+      <p>Score Express Inc provides dry van and dedicated freight transportation between Canada and the United States with clear communication and dependable delivery.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#quote">Request Quote</a>
+        <a class="btn btn-secondary" href="#services">Our Services</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Freightliner_Cascadia.jpg" alt="Freightliner Cascadia truck">
     </div>
   </div>
 </section>
@@ -572,127 +232,61 @@ img { max-width: 100%; display: block; }
 <section class="section" id="services">
   <div class="container">
     <div class="section-head">
-      <small>Our Services</small>
-      <h2>Transport And Logistics</h2>
-      <p>Professional freight support for brokers and shippers looking for consistent border-crossing operations and reliable lane coverage.</p>
+      <h2>Services</h2>
+      <p>Focused freight support for brokers and shippers.</p>
     </div>
-    <div class="services-grid">
-      <article class="service-card">
-        <div class="service-icon">01</div>
+    <div class="grid-3">
+      <article class="card">
         <h3>Dry Van Freight</h3>
-        <p>Secure transport for general cargo with stable transit times and proactive shipment updates.</p>
+        <p>Secure transportation for general freight across North America.</p>
       </article>
-      <article class="service-card">
-        <div class="service-icon">02</div>
-        <h3>Cross Border Loads</h3>
-        <p>Canada-US freight handling with process discipline and smooth customs-ready documentation.</p>
+      <article class="card">
+        <h3>Cross-Border Loads</h3>
+        <p>Reliable Canada-US freight movement with consistent updates.</p>
       </article>
-      <article class="service-card">
-        <div class="service-icon">03</div>
+      <article class="card">
         <h3>Dedicated Lanes</h3>
-        <p>Lane-focused service models for high-frequency routes and repeat shipper programs.</p>
-      </article>
-      <article class="service-card">
-        <div class="service-icon">04</div>
-        <h3>Broker Support</h3>
-        <p>Clear communication, fast response windows, and dependable pickup and delivery performance.</p>
+        <p>Repeat-lane support for brokers and long-term shipping partners.</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section features" id="features">
-  <div class="container features-grid">
-    <div>
-      <div class="section-head">
-        <small>Why Choose Us</small>
-        <h2>Built For Time-Critical Freight</h2>
-        <p>We combine disciplined dispatch workflows with route-level consistency to keep your loads moving with fewer surprises.</p>
-      </div>
-      <div class="feature-list">
-        <article class="feature-item">
-          <h4>Consistent Carrier Execution</h4>
-          <p>Load planning and communication standards designed for reliable ETA performance.</p>
-        </article>
-        <article class="feature-item">
-          <h4>Broker-Friendly Operations</h4>
-          <p>Quick updates, complete paperwork, and structured check calls throughout transit.</p>
-        </article>
-        <article class="feature-item">
-          <h4>Cross-Border Experience</h4>
-          <p>Practical know-how for Canada-US movement and customs coordination readiness.</p>
-        </article>
-      </div>
+<section class="section" id="coverage">
+  <div class="container">
+    <div class="coverage-box">
+      <h2>Coverage</h2>
+      <p>We serve all 48 U.S. states plus Canada. Share any origin and destination for a lane-specific quote.</p>
     </div>
-    <aside class="quote-box" id="quote">
-      <h3>Get A Quote</h3>
-      <p>Share load details and our team will respond quickly.</p>
-      <form class="quote-form" action="#" method="post">
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <div class="container quote-wrap">
+    <article class="form">
+      <h2>Get A Freight Quote</h2>
+      <form action="#" method="post">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Email Address" required>
         <input type="text" name="origin" placeholder="Origin (City, State/Province)" required>
         <input type="text" name="destination" placeholder="Destination (City, State/Province)" required>
-        <select name="load_type" required>
-          <option value="">Load Type</option>
-          <option>Dry Van</option>
-          <option>LTL</option>
+        <select name="equipment" required>
+          <option value="">Equipment Type</option>
+          <option>53' Dry Van</option>
+          <option>Partial / LTL</option>
           <option>Dedicated Lane</option>
         </select>
-        <textarea rows="3" name="message" placeholder="Freight details"></textarea>
-        <button type="submit">Request Quote</button>
+        <textarea rows="4" name="message" placeholder="Weight, commodity, ready date"></textarea>
+        <button type="submit">Request Any Lane Quote</button>
       </form>
-    </aside>
-  </div>
-</section>
-
-<section class="section stats" id="about">
-  <div class="container">
-    <div class="section-head">
-      <small>Company Snapshot</small>
-      <h2>Score Express In Numbers</h2>
-      <p>A performance-focused cross-border partner serving brokers and shippers across North America.</p>
-    </div>
-    <div class="stats-grid">
-      <div class="stat"><strong>24k+</strong><span>Loads Completed</span></div>
-      <div class="stat"><strong>2</strong><span>Countries Covered</span></div>
-      <div class="stat"><strong>12+</strong><span>Years Experience</span></div>
-      <div class="stat"><strong>99%</strong><span>On-Time Commitment</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section testimonial">
-  <div class="container">
-    <div class="section-head">
-      <small>Client Feedback</small>
-      <h2>What Partners Say</h2>
-    </div>
-    <article class="testimonial-card">
-      <p>"Score Express keeps communication tight and delivers with consistency on cross-border lanes. Their dispatch team responds fast and resolves issues before they become delays."</p>
-      <strong>Logistics Partner, Ontario</strong>
     </article>
-  </div>
-</section>
 
-<section class="section contact" id="contact">
-  <div class="container contact-grid">
-    <article class="contact-card">
-      <div class="section-head">
-        <small>Contact</small>
-        <h2>Dispatch Office</h2>
-      </div>
+    <article class="info" id="contact">
+      <h2>Contact</h2>
       <p><strong>Email:</strong> dispatch@scoreexpress.com</p>
       <p><strong>Location:</strong> Brantford, Ontario</p>
-      <p><strong>Service Window:</strong> Monday to Saturday, 9:00 AM - 6:00 PM</p>
-    </article>
-    <article class="form-card">
-      <h3>Send A Message</h3>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <textarea rows="5" name="message" placeholder="Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <p><strong>Hours:</strong> Monday-Saturday, 9:00 AM - 6:00 PM</p>
+      <p><strong>Coverage:</strong> Canada + all 48 U.S. states</p>
     </article>
   </div>
 </section>
@@ -700,15 +294,8 @@ img { max-width: 100%; display: block; }
 <footer class="footer">
   <div class="container">
     <p>&copy; 2026 Score Express Inc. All rights reserved.</p>
-    <nav class="footer-nav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Cross-Border Freight Carrier</p>
   </div>
 </footer>
 </body>
 </html>
-
-

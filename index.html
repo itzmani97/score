@@ -159,7 +159,7 @@ padding:20px;
 <a href="#services">Services</a>
 <a href="#equipment">Equipment</a>
 <a href="#coverage">Coverage</a>
-<a href="#contact">Contact</a>
+<a href="#contact">Quote</a>
 </div>
 
 </nav>
@@ -252,17 +252,28 @@ padding:20px;
 
 <section class="contact" id="contact">
 
-<h2>Contact Score Express</h2>
+<h2>Request a Quote</h2>
 
-<form>
+<form action="https://formsubmit.co/dispatch@scoreexpress.ca" method="POST">
 
-<input type="text" placeholder="Name">
+<input type="hidden" name="_subject" value="New Quote Request - Score Express">
+<input type="hidden" name="_captcha" value="false">
 
-<input type="email" placeholder="Email">
+<input type="text" name="name" placeholder="Full Name" required>
 
-<textarea rows="4" placeholder="Message"></textarea>
+<input type="email" name="email" placeholder="Email Address" required>
 
-<button type="submit">Send Message</button>
+<input type="text" name="company" placeholder="Company Name">
+
+<input type="text" name="pickup" placeholder="Pickup Location" required>
+
+<input type="text" name="delivery" placeholder="Delivery Location" required>
+
+<input type="text" name="freight" placeholder="Freight Type">
+
+<textarea name="message" rows="4" placeholder="Additional Details"></textarea>
+
+<button type="submit">Request Quote</button>
 
 </form>
 

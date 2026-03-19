@@ -1,306 +1,264 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Score Express Inc | Cross-Border Freight</title>
-<meta name="description" content="Simple and reliable cross-border freight transportation between Canada and the United States.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg: #f5f7fa;
-  --card: #ffffff;
-  --text: #0f172a;
-  --muted: #64748b;
-  --line: #dbe2ea;
-  --brand: #0f4c81;
-  --accent: #f97316;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: "Manrope", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
-a { text-decoration: none; color: inherit; }
-.container { width: min(1020px, calc(100% - 32px)); margin: 0 auto; }
-
-.header {
-  background: var(--card);
-  border-bottom: 1px solid var(--line);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-.nav {
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-.logo {
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
-}
-.logo span { color: var(--accent); }
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 16px;
-  color: #334155;
-  font-weight: 600;
-}
-.call {
-  background: var(--brand);
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-weight: 700;
-}
-
-.hero {
-  padding: 78px 0 56px;
-  background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 22px;
-  align-items: center;
-}
-.hero h1 {
-  font-size: clamp(34px, 5vw, 54px);
-  line-height: 1.05;
-  margin-bottom: 14px;
-}
-.hero p {
-  color: var(--muted);
-  margin-bottom: 22px;
-  max-width: 620px;
-}
-.actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 11px 16px;
-  border-radius: 8px;
-  font-weight: 700;
-}
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-secondary { border: 1px solid var(--line); background: #fff; }
-.hero-image {
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-}
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.section { padding: 54px 0; }
-.section-head { margin-bottom: 20px; }
-.section-head h2 {
-  font-size: clamp(28px, 3.5vw, 40px);
-  line-height: 1.1;
-}
-.section-head p { color: var(--muted); margin-top: 8px; }
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-.card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 18px;
-}
-.card h3 { font-size: 20px; margin-bottom: 6px; }
-.card p { color: var(--muted); }
-
-.coverage-box {
-  background: #0f4c81;
-  color: #fff;
-  border-radius: 10px;
-  padding: 18px;
-}
-.coverage-box p { color: #dce7f2; }
-
-.quote-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-.form {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 18px;
-}
-.form form { display: grid; gap: 10px; }
-.form input,
-.form textarea,
-.form select {
-  width: 100%;
-  border: 1px solid #cdd8e3;
-  border-radius: 8px;
-  padding: 10px 11px;
-  font: inherit;
-}
-.form button {
-  border: 0;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 8px;
-  padding: 11px;
-  font-weight: 700;
-  cursor: pointer;
-}
-.info {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 18px;
-}
-.info p { margin-top: 8px; color: #334155; }
-
-.footer {
-  margin-top: 20px;
-  border-top: 1px solid var(--line);
-  background: #fff;
-}
-.footer .container {
-  padding: 18px 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
-  color: #475569;
-}
-
-@media (max-width: 900px) {
-  .hero-grid, .quote-wrap { grid-template-columns: 1fr; }
-  .grid-3 { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 640px) {
-  .menu { display: none; }
-  .grid-3 { grid-template-columns: 1fr; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Express Inc | Trucking and Logistics</title>
+  <meta name="description" content="Score Express Inc provides cross-border and domestic trucking, dry van, and dedicated logistics services from Brantford, Ontario.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="logo" href="#home">Score <span>Express</span></a>
-    <ul class="menu">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#coverage">Coverage</a></li>
-      <li><a href="#quote">Quote</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a class="call" href="tel:+15198657410">Call Dispatch</a>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="#top" class="brand" aria-label="Score Express home">
+        <img src="images/score-express-logo.png.png" alt="Score Express Inc logo" class="brand-logo">
+        <div class="brand-copy">
+          <span class="brand-name">Score Express Inc</span>
+          <span class="brand-tag">Freight and Logistics</span>
+        </div>
+      </a>
 
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <h1>Simple, Reliable Cross-Border Freight</h1>
-      <p>Score Express Inc provides dry van and dedicated freight transportation between Canada and the United States with clear communication and dependable delivery.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#quote">Request Quote</a>
-        <a class="btn btn-secondary" href="#services">Our Services</a>
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#top" class="is-active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#operators">Owner-Operators</a>
+        <a href="#drivers">Company Drivers</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#contact">Contact Us</a>
+        <a href="tel:+15198657410" class="nav-cta">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="hero-media">
+        <img src="images/truck.jpg" alt="Score Express truck on the highway">
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Freightliner_Cascadia.jpg" alt="Freightliner Cascadia truck">
-    </div>
-  </div>
-</section>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Brantford, Ontario to North America</p>
+          <h1>Canada and USA Freight Coverage Built for Reliable Delivery</h1>
+          <p class="hero-text">Score Express handles cross-border truckload moves, domestic Canadian freight, and dedicated lanes with responsive dispatch and dependable service.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-light">Get a Shipping Quote</a>
+            <a href="#drivers" class="btn btn-accent">Join Our Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="services">
-  <div class="container">
-    <div class="section-head">
-      <h2>Services</h2>
-      <p>Focused freight support for brokers and shippers.</p>
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">What we move</p>
+          <h2>Our Services</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-item">
+            <div class="service-icon">
+              <span></span>
+            </div>
+            <h3>Cross-Border Truckload</h3>
+            <p>Consistent freight movement between Canada and the United States with dispatch support and time-sensitive planning.</p>
+          </article>
+          <article class="service-item">
+            <div class="service-icon">
+              <span></span>
+            </div>
+            <h3>Domestic Canada</h3>
+            <p>Regional and long-haul coverage across Ontario and beyond for shippers who need clean communication and stable transit times.</p>
+          </article>
+          <article class="service-item">
+            <div class="service-icon">
+              <span></span>
+            </div>
+            <h3>Dry Van Freight</h3>
+            <p>Protected van service for palletized freight, retail replenishment, general goods, and recurring lane commitments.</p>
+          </article>
+          <article class="service-item">
+            <div class="service-icon">
+              <span></span>
+            </div>
+            <h3>Dedicated Capacity</h3>
+            <p>Dedicated trucks and committed scheduling for customers who need reliable equipment and long-term lane support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section info-band">
+      <div class="container info-band-grid">
+        <div class="company-card">
+          <img src="images/score-express-logo.png.png" alt="Score Express Inc logo" class="company-card-logo">
+          <h3>Score Express Inc</h3>
+          <p>Professional trucking company based in Brantford, Ontario.</p>
+          <ul class="company-list">
+            <li>Phone: <a href="tel:+15198657410">(519) 865-7410</a></li>
+            <li>Email: <a href="mailto:dispatch@scoreexpress.ca">dispatch@scoreexpress.ca</a></li>
+            <li>Coverage: Canada and USA</li>
+          </ul>
+        </div>
+
+        <div class="recruiting-copy">
+          <p class="eyebrow eyebrow-dark">Now hiring</p>
+          <h2>Drive With Score Express</h2>
+          <p>We are building a dependable fleet with professional drivers and owner-operators who want steady work, straightforward dispatch, and a company that values consistency.</p>
+        </div>
+
+        <article id="operators" class="career-card">
+          <h3>For Owner-Operators</h3>
+          <ul>
+            <li>Consistent cross-border lanes</li>
+            <li>Supportive dispatch team</li>
+            <li>Competitive settlement structure</li>
+            <li>Professional freight planning</li>
+          </ul>
+          <a href="#contact" class="btn btn-accent btn-small">Apply Now</a>
+        </article>
+
+        <article id="drivers" class="career-card">
+          <h3>For Company Drivers</h3>
+          <ul>
+            <li>Steady miles and planned routes</li>
+            <li>Well-maintained equipment</li>
+            <li>Respectful communication</li>
+            <li>Growth with a newer fleet</li>
+          </ul>
+          <a href="#contact" class="btn btn-accent btn-small">Apply Now</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="fleet" class="section fleet-section">
+      <div class="container fleet-grid">
+        <div class="fleet-copy">
+          <p class="eyebrow eyebrow-dark">Fleet focus</p>
+          <h2>Built for Dry Van and Dedicated Freight</h2>
+          <p>Our operation is structured around dependable highway service, strong communication, and flexible dispatch for customers who need responsive trucking without unnecessary complexity.</p>
+        </div>
+        <div class="fleet-stats">
+          <div class="stat-box">
+            <strong>Cross-Border</strong>
+            <span>USA and Canada freight support</span>
+          </div>
+          <div class="stat-box">
+            <strong>Dry Van</strong>
+            <span>General freight and palletized loads</span>
+          </div>
+          <div class="stat-box">
+            <strong>Dedicated Lanes</strong>
+            <span>Consistent support for recurring customers</span>
+          </div>
+          <div class="stat-box">
+            <strong>Responsive Dispatch</strong>
+            <span>Clear updates and direct communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">Contact us</p>
+          <h2>Request a Quote or Start a Driver Conversation</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-panel">
+            <h3>Reach Score Express</h3>
+            <p>Send shipment details, lane information, or hiring inquiries and we will follow up directly.</p>
+
+            <div class="contact-lines">
+              <div class="contact-line">
+                <span>Phone</span>
+                <a href="tel:+15198657410">(519) 865-7410</a>
+              </div>
+              <div class="contact-line">
+                <span>Email</span>
+                <a href="mailto:dispatch@scoreexpress.ca">dispatch@scoreexpress.ca</a>
+              </div>
+              <div class="contact-line">
+                <span>Location</span>
+                <p>Brantford, Ontario, Canada</p>
+              </div>
+            </div>
+
+            <div class="social-row" aria-label="Social links">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Instagram">ig</a>
+            </div>
+          </div>
+
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-grid">
+              <label>
+                Full Name
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                Company
+                <input type="text" name="company">
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" required>
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone">
+              </label>
+              <label class="full-width">
+                Inquiry Type
+                <select name="service">
+                  <option value="">Select one</option>
+                  <option value="quote">Shipping Quote</option>
+                  <option value="owner-operator">Owner-Operator Application</option>
+                  <option value="company-driver">Company Driver Application</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </label>
+              <label class="full-width">
+                Message
+                <textarea name="message" rows="5" required placeholder="Tell us about your freight lane, shipment volume, or hiring interest."></textarea>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-dark btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>Score Express Inc</strong>
+        <p>Trucking and logistics support from Brantford, Ontario.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#operators">Owner-Operators</a>
+        <a href="#drivers">Company Drivers</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">Copyright 2026 Score Express Inc. All rights reserved.</p>
     </div>
-    <div class="grid-3">
-      <article class="card">
-        <h3>Dry Van Freight</h3>
-        <p>Secure transportation for general freight across North America.</p>
-      </article>
-      <article class="card">
-        <h3>Cross-Border Loads</h3>
-        <p>Reliable Canada-US freight movement with consistent updates.</p>
-      </article>
-      <article class="card">
-        <h3>Dedicated Lanes</h3>
-        <p>Repeat-lane support for brokers and long-term shipping partners.</p>
-      </article>
-    </div>
-  </div>
-</section>
+  </footer>
 
-<section class="section" id="coverage">
-  <div class="container">
-    <div class="coverage-box">
-      <h2>Coverage</h2>
-      <p>We serve all 48 U.S. states plus Canada. Share any origin and destination for a lane-specific quote.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="quote">
-  <div class="container quote-wrap">
-    <article class="form">
-      <h2>Get A Freight Quote</h2>
-      <form action="https://formsubmit.co/dispatch@scoreexpress.ca" method="post">
-        <input type="hidden" name="_subject" value="New Freight Quote - Score Express">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="text" name="origin" placeholder="Origin (City, State/Province)" required>
-        <input type="text" name="destination" placeholder="Destination (City, State/Province)" required>
-        <select name="equipment" required>
-          <option value="">Equipment Type</option>
-          <option>53' Dry Van</option>
-          <option>Partial / LTL</option>
-          <option>Dedicated Lane</option>
-        </select>
-        <textarea rows="4" name="message" placeholder="Weight, commodity, ready date"></textarea>
-        <button type="submit">Request Any Lane Quote</button>
-      </form>
-    </article>
-
-    <article class="info" id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> dispatch@scoreexpress.ca</p>
-      <p><strong>Location:</strong> Brantford, Ontario</p>
-      <p><strong>Hours:</strong> Monday-Saturday, 9:00 AM - 6:00 PM</p>
-      <p><strong>Coverage:</strong> Canada + all 48 U.S. states</p>
-    </article>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Score Express Inc. All rights reserved.</p>
-    <p>Cross-Border Freight Carrier</p>
-  </div>
-</footer>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
